@@ -1,0 +1,422 @@
+<!-- --------------------------------------  HEADER ------------------------------------------------------------- -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="Set-Cookie" content="HttpOnly;Secure;SameSite=Strict">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="shortcut icon" type="image/jpg" href="/img/favicon/susanacanel.jpg">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lovers+Quarrel&family=Marck+Script&family=Parisienne&family=Satisfy&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/91636700df.js" crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ramda/0.25.0/ramda.min.js"></script>
+  <script src="/js/moment.js"></script>
+  <title>Susana Canel</title>
+</head>
+
+<body>
+  <div class="encabezamiento">
+    <div class="contenedoricono">
+      <img src="/img/inicio/susana.jpg" class="icono" />
+      <span class="titulo"><span>Susana Canel</span>
+    </div>
+    <div class="contenedortextolupa">
+      <input type="text" id="textobusqueda" class="textolupa" placeholder="Buscar..." />
+    </div>
+    <div class="contenedorlupa">
+      <button class="botonlupa" onclick="buscar()"><span class="material-icons">search</span></button>
+    </div>
+    <div class="contenedormenu">
+      <nav class="menu">
+        <ul>
+          <li><a id="index" href="/index.php">Inicio</a></li>
+          <li><a id="sobremi" href="/sobremi.php">Sobre mi</a></li>
+          <li><a id="blogvlog" href="/blogvlog.php">Blog/Vlog</a></li>
+          <li><a id="asesoramiento" href="/asesoramiento.php">Asesoramiento</a></li>
+          <li><a id="contactame" href="/contacto.php">Contactame</a></li>
+          <li><a id="subscribite" href="/subscripcion.php">Subscríbete</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="clearer"></div>
+  </div>
+  <script>
+    const buscar = () => {
+      const texto = document.getElementById("textobusqueda").value;
+      // texto = texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+      const urlDeBusqueda = `/buscar.php?textoABuscar=${texto}`
+      location.href = urlDeBusqueda.replace('#', '%23');
+    }
+  </script>
+  <!-- ------------------------------------ FIN HEADER ----------------------------------------------------------- -->
+  <div class="contenedor">
+
+    <div class="foto">
+      <iframe class="video" src="https://www.youtube.com/embed/5C59miGT8W4" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+      <div class="leyenda">Te cuento sobre mí y mi emprendimiento turístico.</div>
+    </div>
+    <div class="texto">
+      <div class="centrada">
+
+        <h3>Soy Susana Canel.</h3>
+        <p>
+          Me apasiona viajar. A los 23 años hice mi primer viaje a Roma y enloquecí de amor por
+          ella.
+          Con el tiempo extendí mi amor a toda Italia pero guardando siempre un lugarcito muy especial en mi
+          corazón para Roma.
+          Roma: te amo!!! (no me pude contener, es un amor eterno) ¡La visité 22 veces y en unos meses estaré
+          nuevamente allá!
+        </p>
+        <p>
+          Un día se me ocurrió que compartir mis experiencias me daría una gran alegría y también que podría
+          aprovecharlas
+          asesorándote para que puedas conocer esta maravillosa ciudad como yo lo he hecho y aún sigo
+          descubriendo!!!
+          No solamente asesorarte con Roma (mi especialidad) también con divertidos recorridos por pueblitos
+          encantadores y por
+          paisajes increíbles… En fin, todos aquellos lugares que he ido conociendo.
+        </p>
+      </div>
+    </div>
+
+    <div class="foto">
+      <img class="foto-interior zoom" src="http://susanacanel.com/img/sobremi/matera.jpg" title="En la fascinante Matera." />
+      <div class="leyenda">En la fascinante Matera.</div>
+    </div>
+    <div class="texto">
+      <div class="centrada">
+        <h3>Matera (Basilicata).</h3>
+        <p>
+          Matera me dejó una honda impresión. No puedo dejar de recordarla. Es una ciudad mágica. Es
+          especial, es única, se encuentra en medio de un paisaje impresionante.
+        </p>
+        <p>
+          Es tan única que parece que detrás de mí hubiera un telón!!! No parece real.
+        </p>
+        <p>
+          Uno camina por el centro histórico y a toda hora se escuchan coros o música porque es la ciudad de la música.
+          Llena de conservatorios.
+        </p>
+        <p>
+          Fue elegida capital europea de la cultura 2019. Y bien que se lo merece.
+        </p>
+        <p>
+          Aquí Mel Gibson filmó «La pasión de Cristo».
+        </p>
+      </div>
+
+    </div>
+
+    <div class="foto">
+      <img class="foto-interior zoom" src="http://susanacanel.com/img/sobremi/con-mi-instructor -de-kayak-mar-del-plata.jpg"
+        title="Invierno en Mar del Plata. Con mi instructor de kayak." />
+      <div class="leyenda">Con mi instructor de kayak. Invierno en Mar del Plata.</div>
+    </div>
+    <div class="texto">
+      <h3>Con mi instructor de kayak. Mar del Plata en invierno.</h3>
+      <p>Parece que hiciera calorcito por el solcito, pero no, cuando empezamos a remar, una mañana de julio, con
+        niebla,
+        había solo 0°C. La foto es al regreso, el sol un poco más alto y unos 3°C. Y se sentía mucho frío con el
+        neoprene
+        (que "funciona" en el agua, no en el aire, ja, ja). Pero quien me quita lo bailado. Inolvidable experiencia.
+      </p>
+    </div>
+    <div class="foto">
+      <img class="foto-interior zoom" src="http://susanacanel.com/img/sobremi/remando-en-kayak-Tigre.jpg"
+        title="Remando en kayak. Verano en Tigre." />
+      <div class="leyenda">Remando en kayak. Verano en Tigre.</div>
+    </div>
+    <div class="texto">
+      <h3>Remando en kayak. Tigre.</h3>
+      <p>Ahora sí en verano.
+      </p>
+    </div>
+    <div class="foto">
+      <img class="foto-interior zoom" src="http://susanacanel.com/img/sobremi/en-el-kayak-Tigre.jpg"
+        title="Remando en kayak. Verano en Tigre." />
+      <div class="leyenda">Remando en kayak. Verano en Tigre.</div>
+    </div>
+    <div class="texto">
+      <h3>Remando en kayak. Tigre.</h3>
+    </div>
+    <div class="foto">
+      <img class="foto-interior zoom" src="http://susanacanel.com/img/sobremi/buceando-isla-de-elba1.jpg"
+        title="Buceando en Porto Ercole, Monte Argentario, Toscana en Italia." />
+      <div class="leyenda">Buceando en en Porto Ercole, Monte Argentario, Toscana en Italia.</div>
+    </div>
+    <div class="texto">
+      <h3>Buceando en Porto Ercole (Monte Argentario, Toscana, Italia).</h3>
+      <p>
+        Ahora, atardecer otoñal.
+      </p>
+    </div>
+    <div class="foto">
+      <img class="foto-interior zoom" src="http://susanacanel.com/img/sobremi/buceando-en-la-isla-de-elba2.jpg"
+        title="Buceando en Porto Ercole, Monte Argentario, Toscana en Italia." />
+      <div class="leyenda">Buceando en en Porto Ercole, Monte Argentario, Toscana en Italia.</div>
+    </div>
+    <div class="texto">
+      <h3>Buceando en Porto Ercole.</h3>
+      <p>
+        Antes de la inmersión.
+      </p>
+    </div>
+    <div class="foto">
+      <img class="foto-interior zoom" src="http://susanacanel.com/img/sobremi/despues-de-bucear.jpg"
+        title="Buceando en Porto Ercole, Monte Argentario, Toscana en Italia." />
+      <div class="leyenda">Buceando en en Porto Ercole, Monte Argentario, Toscana en Italia.</div>
+    </div>
+    <div class="texto">
+      <h3>Buceando en Porto Ercole en otoño y cuando se ponía el sol.</h3>
+      <p>
+        El solcito...poniéndose. Las sombras...avanzando. Después de bucear, toda mojada y esperando que el buzo
+        volviera
+        ... Qué frío ¡Brrr! Tiritando.
+      </p>
+      <p>
+        Al fondo se ve Porto Ercole, ya en sombras.
+      </p>
+    </div>
+    <div class="foto">
+      <img class="foto-interior zoom" src="http://susanacanel.com/img/sobremi/despues-de-bucear-que-frio.jpg"
+        title="Después de bucear. Porto Ercole, Monte Argentario, Toscana en Italia." />
+      <div class="leyenda">Después de bucear. Porto Ercole, Monte Argentario, Toscana en Italia.</div>
+    </div>
+    <div class="texto">
+      <h3>El después del otoñal buceo.</h3>
+      <p>
+        Después de bucear, cabello mojado, sin ducha caliente, sin toalla...no me queda más que reír.
+      </p>
+    </div>
+    <div class="foto">
+      <img class="foto-interior zoom" src="http://susanacanel.com/img/sobremi/navegando-en-el-brivon.jpg"
+        title="Navegando en el Brivón. Olivos, Argentina." />
+      <div class="leyenda">Navegando en el Brivón. Olivos, Argentina.</div>
+    </div>
+    <div class="texto">
+      <h3>Navegando en el Brivón.</h3>
+    </div>
+    <div class="foto">
+      <img class="foto-interior zoom" src="http://susanacanel.com/img/sobremi/dentro-del-istria.jpg"
+        title="Haciendo equilibrio en el cockpit del Istria. Navegando de Olivos a Colonia." />
+      <div class="leyenda">Haciendo equilibrio en el cockpit del Istria. Navegando de Olivos a Colonia.</div>
+    </div>
+    <div class="texto">
+      <h3>Haciendo equilibrio dentro del Istria.</h3>
+    </div>
+    <div class="foto">
+      <img class="foto-interior zoom" src="http://susanacanel.com/img/sobremi/timoneando-en-el-quitapenas.jpg"
+        title="Timonenado en el Quitapenas. San Fernando. Argentina." />
+      <div class="leyenda">Timonenado en el Quitapenas. San Fernando. Argentina.</div>
+    </div>
+    <div class="texto">
+      <h3>Timoneando en el Quitapenas.</h3>
+    </div>
+    <div class="foto">
+      <img class="foto-interior zoom" src="http://susanacanel.com/img/sobremi/viaje-a-colonia-en-el-istria.jpg"
+        title="Navegando en el Istria, de Olivos a Colonia, Uruguay." />
+      <div class="leyenda">Navegando en el Istria, de Olivos a Colonia, Uruguay.</div>
+    </div>
+    <div class="texto">
+      <h3>Navegando a Colonia en el Istria.</h3>
+    </div>
+    <div class="foto">
+      <img class="foto-interior zoom" src="http://susanacanel.com/img/sobremi/esperando-el-pampero-colonia.jpg"
+        title="A la espera del viento Pampero en el Puerto Deportivo de Colonia, Uruguay." />
+      <div class="leyenda">A la espera del viento Pampero en el Puerto Deportivo de Colonia, Uruguay.</div>
+    </div>
+    <div class="texto">
+      <h3>Esperando el Pampero. Colonia.</h3>
+    </div>
+    <div class="foto">
+      <img class="foto-interior zoom" src="http://susanacanel.com/img/sobremi/comenzo-el-pampero.jpg"
+        title="¡Y llegó el viento Pampero! Puerto Deportivo de Colonia, Uruguay." />
+      <div class="leyenda">¡Y llegó el viento Pampero! Puerto Deportivo de Colonia, Uruguay.</div>
+    </div>
+    <div class="texto">
+      <h3>Comenzó el Pampero. Colonia.</h3>
+    </div>
+    <div class="foto">
+      <img class="foto-interior zoom" src="http://susanacanel.com/img/sobremi/velero-escorado.jpg"
+        title="Navegando escorados. Olivos, Argentina." />
+      <div class="leyenda">Navegando escorados. Olivos, Argentina.</div>
+    </div>
+    <div class="texto">
+      <h3>Velero escorado.</h3>
+    </div>
+    <div class="foto">
+      <img class="foto-interior zoom" src="http://susanacanel.com/img/sobremi/escalera-fenicia-capri.jpg"
+        title="Descendiendo por la escalera fenicia. Isla de Capri, Italia." />
+      <div class="leyenda">Descendiendo por la escalera fenicia. Isla de Capri, Italia.</div>
+    </div>
+    <div class="texto">
+      <h3>Escalera fenicia. Capri. Italia.</h3>
+    </div>
+    <div class="foto">
+      <img class="foto-interior zoom" src="http://susanacanel.com/img/sobremi/tirando-la-monedita-fontana-di-trevi.jpg"
+        title="Tirando la monedita en la Fontana di Trevi. Roma, Italia." />
+      <div class="leyenda">Tirando la monedita en la Fontana di Trevi. Roma, Italia.</div>
+    </div>
+    <div class="texto">
+      <h3>Tirando la monedita Fontana di Trevi.</h3>
+    </div>
+    <div class="foto">
+      <iframe class="video" src="https://www.youtube.com/embed/Dip9I7EHnbk" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+      <div class="leyenda">Viento Pampero en Colonia, Uruguay.</div>
+    </div>
+    <div class="texto">
+      <h3>En Colonia y con Pampero.</h3>
+      <p>
+        ¡En Colonia apenas a tiempo par amarrar y ver llegar el Pampero! La de blanco y rosa soy yo,
+        volándome!!!!
+      </p>
+    </div>
+  </div>
+  <div class="contenedortexto">
+    <div class="textofoto">
+      <p style="text-align: justify;"><strong>Soy muy curiosa</strong>, me gusta saber de todo, por eso <strong>me
+          gusta viajar</strong>, conocer gente, interiorizarme por las costumbres de cada lugar. En la primera
+        foto estoy en Matera, en la Región Basilicata. Esta ciudad es absolutamente increíble. Por algo la elegí
+        como primera foto de mi blog.</p>
+      <p style="text-align: justify;">Además me encanta la <strong>historia antigua y medieval y la mitología
+          principalmente la griega y la romana</strong>. Me gusta muchísimo leer, sobre todo <strong>novelas
+          históricas</strong>, porque me resulta una manera entretenida de aprender distintas culturas.
+        Últimamente leo solamente libros en idioma italiano, más allá de que sea un placer para mí leer en ese
+        idioma, quiero enriquecer mi vocabulario y no olvidarme lo que he estudiado. Trato de leer autores
+        italianos, es mi manera de acercarme a la cultura italiana. Aunque he comprado libros traducidos de
+        otros idiomas (¡nadie es perfecto!).</p>
+      <p style="text-align: justify;">También <strong>me encanta el cine</strong> y ¿adiviná qué películas me
+        gusta ver? pues, ¡las italianas! Pero no soy excluyente. Soy también fanática del cine inglés y me gusta
+        el francés. Desde mis 9 años que voy al cine una vez a la semana y casi siempre lo cumplí ¡Si habré
+        visto películas! No llegan muchas películas españolas pero las que he visto también me han gustado
+        mucho.</p>
+      <p style="text-align: justify;">Y <strong>me gusta escribir</strong>. Compartir mis experiencias, contar
+        anécdotas y conversar!!!</p>
+      <p style="text-align: justify;"><strong>Entre mis pasiones se encuentra el mar</strong> y los
+        <strong>deportes acuáticos</strong>, los que cuidan el medio ambiente. <strong>Nada que
+          contamine!!!</strong> Ningún tipo de contaminación, incluyo una que para mí es importantísima y de
+        la cual no se habla, la <strong>contaminación sonora</strong>. Odio los ruidos artificiales. <strong>Me
+          encanta escuchar el ruido del mar, del viento, de las olas al romper</strong>.</p>
+      <p style="text-align: justify;">En cuanto tengo la oportunidad voy al Tigre<strong> a remar en
+          kayak</strong>. Cuando voy por un río tranquilo y sin gente me da un placer inmenso impulsarme con
+        los remos, dejar de remar y permitir que el kayak se deslice sin hacer ruido. Puse algunas fotos de
+        remadas por el Tigre. Pero también me encantaba ir a remar a Mar del Plata. Con mi instructor íbamos a
+        600 m de la costa, hemos ido de La Perla a playa Varese. También me enseñó a barrenar con el kayak. Todo
+        muy divertido. Siempre en invierno. Puse una foto de una de una de esas remadas que comenzó con cero
+        grados, julio en Mar del Plata. Después salió el sol, se fue la niebla y levantó un poco la temperatura.
+      </p>
+      <p style="text-align: justify;">He hecho<strong> bautismo de buceo</strong> en tres oportunidades. Dos veces
+        en Mar del Plata, siempre en invierno. Y la tercera en verano en Porto Ercole en Monte Argentario (Toscana
+        Italia). Las fotos son de esta última vez. Era otoño y en cuanto bajó el sol comenzó a hacer mucho frío y
+        yo no tenía ni toalla. Había ido a conocer Porto Ercole, caminaba cuando vi que se podía practicar buceo
+        e improvisé!!! Qué frío, toda empapada y sin poderme secar. Pero me divertí mucho ¡El que quiere
+        celeste, que le cueste!</p>
+    </div>
+    <div class="textotexto">
+
+      <p style="text-align: justify;">Con mayor frecuencia navego en velero. <strong>Me recibí de timonel de yate
+          a vela</strong> <strong>y motor</strong> <strong>¡Me gustan las olas, el viento y las
+          tormentas!</strong> Me gusta el velero escorado e ir atada en la borda con lo pies colgando para
+        hacer contrapeso ¡Y las ceñidas rabiosas! Y como <strong>me gusta el invierno</strong>, el curso de
+        timonel lo hice en invierno. En varias navegaciones a Colonia, Uruguay, me tocó viento muy fuerte, 20
+        nudos o más y hasta una vez llegamos a amarrar cuando se desató el Pampero. Fue muy emocionante. Incluí
+        fotos de distintas navegaciones y del Pampero en Colonia.</p>
+      <p style="text-align: justify;">No solamente me gusta el mar, también <strong>me gusta el cielo.</strong>
+        Volar, en cualquier cosa, avión, por supuesto. Y no solamente, <strong>h</strong>e <strong>volado en
+          parapente</strong> (con instructor) en dos oportunidades y enloquecí del placer. Esta experiencia
+        fue fascinante. Increíble. El viento a 2000 m de altura. Las nubes ahí nomás.</p>
+      <p style="text-align: justify;"><strong>Y más tranqui&#8230;caminar y caminar! Subir y bajar&#8230;puf!
+        </strong>En la foto estoy en la isla de Capri, bajé 600m desde la cima del monte Solaro hasta el nivel
+        del mar, gran parte del recorrido por la escalera fenicia. Caminar, sí, me gusta, y mucho pero subir o
+        bajar, no, por favor. Me canso mucho ¡Pero en Italia no me queda otra!</p>
+      <p style="text-align: justify;"><strong>Soy fanática de la fotografía</strong>. Me encanta sacar fotos. Nada
+        especial, ni equipo ni nada, solamente para tener un recuerdo. Miles y <strong>miles de fotos</strong>
+        de mis viajes. <strong>Amo la naturaleza</strong> (¡la necesitoooooo¡) y los leones. Elegí como foto de
+        portada de mi blog una con un león. Fue en mi primer viaje a Roma, fui al zoológico y había un fotógrafo
+        profesional con un leoncito para sacar fotos a los interesados. Y yo, por supuesto que lo estaba. Así,
+        en una sola foto reuní mis dos amores: Roma y los leones.</p>
+      <p style="text-align: justify;">Estoy <strong>muy preocupada por la contaminación ambiental</strong>. Si
+        pudiera tomaría medidas drásticas en contra de los autos, ómnibus, camiones&#8230;es una larga lista.
+        Con caminatas, bicicletas, subterráneos y trenes, estoy hecha. Los autos para contadas y excepcionales
+        ocasiones y por supuesto eléctricos o cualquier cosa que no contamine.</p>
+      <h3 style="text-align: justify;"><strong>Estudios</strong></h3>
+      <p style="text-align: left;">Estudié<strong> italiano</strong>, en la Asociación Dante Alighieri de Buenos
+        Aires. Terminé los 4 cursos de <strong>Civiltà</strong> y 3 de <strong>perfeccionamiento de la
+          lengua</strong>, me falta el último pero como estoy siempre viajando no puedo hacerlo.</p>
+      <p style="text-align: justify;">Mi curiosidad me ha movido a estudiar de todo. Primero me recibí de
+        <strong>profesora de Química</strong>, después de <strong>Geógrafa Matemática</strong> y por último de
+        <strong>Ing. Electrónica</strong>. Y mientras estudiaba esas carreras en simultáneo empezaba otras que
+        lamentablemente he tenido que ir dejando. En el camino quedaron Geología, Análisis de Sistemas y
+        Ciencias de la Computación ¿Y de qué trabajé? Bueno, un poco en cada cosa para finalmente dedicarme por
+        entero a la docencia universitaria en Análisis Matemático II y en cátedras de Electrónica. Así que, a
+        las pasiones anteriores se pueden agregar: <strong>estudiar y enseñar</strong>. Enseñar en general
+        ¡Explicar cualquier materia!</p>
+      <p style="text-align: justify;">Ahora tengo esta empresa de asesoramiento turístico, doy clases particulares
+        de Matemática, Física y Técnicas Digitales y dicto Cursos de VHDL (lenguaje descriptor de hardware).</p>
+    </div>
+  </div>
+  <!-- <script src="js/sobremi.js"></script> -->
+  <script>
+    document.getElementById("index").classList.remove('activo');
+    document.getElementById("sobremi").classList.add('activo');
+    document.getElementById("blogvlog").classList.remove('activo');
+    document.getElementById("asesoramiento").classList.remove('activo');
+    document.getElementById("contactame").classList.remove('activo');
+    document.getElementById("subscribite").classList.remove('activo');
+  </script>
+  <!-- ----------------------------------------------------------------------------------------------------------- -->
+  <div class="pie">
+
+    <div class="telefono">
+      <div class="telefonotelefono">
+        ☎ (011) 4543-5278 <br />
+        susanacanel@gmail.com <br />
+        <a href="https://www.youtube.com/susanacanel" class="redes-sociales">
+          <span>
+            <i class="fab fa-youtube"></i>
+            YouTube
+          </span>
+        </a><br />
+        <a href="https://www.facebook.com/romatoursusy/" class="redes-sociales">
+          <span>
+            <i class="fab fa-facebook"></i>
+            Facebook
+          </span>
+        </a><br />
+        <a href="https://instagram.com/canelsusana/" class="redes-sociales">
+          <span>
+            <i class="fab fa-instagram"></i>
+            Instagram
+          </span>
+        </a><br />
+      </div>
+    </div>
+    <div class="politica">
+      <div class="politicapolitica">
+        Copyright © <a href="https://susanacanel.com/">Susana Canel</a> <br /> <a href="politica.php">Política de
+          privacidad</a>
+        <br /><span class="autora">Sitio creado por: Susana Canel</span>
+      </div>
+    </div>
+    <div class="direccion">
+      <div class="direcciondireccion">
+        Belgrano <br />Buenos Aires <br />Argentina
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+<!-- ----------------------------------------------------------------------------------------------------------- -->

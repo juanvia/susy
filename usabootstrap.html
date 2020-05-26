@@ -49,16 +49,16 @@
       font-size: larger;
       line-height: 1.3rem;
     }
-    
+
     .video {
       width: 100%;
     }
-    
+
     @media (max-width: 900px) {
       .foto {
         width: 98%;
       }
-      
+
       .texto {
         margin-top: 1rem !important;
         width: 98%;
@@ -77,16 +77,48 @@
       flex-wrap: wrap;
       justify-content: space-between;
     }
+
+    .transparente {
+      background-color: transparent;
+    }
+
+    .solo-con-left-padding {
+      padding: 0;
+      padding-left: 0.5rem;
+    }
+
+    .buscar::placeholder {
+      color: #1ba145;
+    }
+
+    .navbar-brand {
+      margin-right: 4rem;
+    }
+
+    .btn {
+      padding-top: 4px;
+      padding-bottom: 0px;
+    }
   </style>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
-    <a class="navbar-brand" href="#">Susana Canel</a>
+    <a class="navbar-brand" href="#">
+      <img src="/img/inicio/susana.jpg" class="icono" />
+      <span>Susana Canel</span>
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
       aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mr-auto">
+      <form class="form-inline mt-1 mt-lg-0">
+        <input class="form-control mr-sm-2 transparente solo-con-left-padding buscar" type="text"
+          placeholder="Buscar..." aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          <span class="material-icons">search</span>
+        </button>
+      </form>
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
           <a class="nav-link" href="/index.php">Inicio<span class="sr-only">(current)</span></a>
         </li>
@@ -106,10 +138,6 @@
           <a class="nav-link" href="#">Subscríbete</a>
         </li>
       </ul>
-      <form class="form-inline mt-1 mt-lg-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
     </div>
   </nav>
   <!-- <div class="encabezamiento">

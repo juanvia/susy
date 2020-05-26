@@ -10,19 +10,109 @@
   <meta name="Set-Cookie" content="HttpOnly;Secure;SameSite=Strict">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
   <link rel="shortcut icon" type="image/jpg" href="/img/favicon/susanacanel.jpg">
   <link
     href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lovers+Quarrel&family=Marck+Script&family=Parisienne&family=Satisfy&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style.css">
   <script src="https://kit.fontawesome.com/91636700df.js" crossorigin="anonymous"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ramda/0.25.0/ramda.min.js"></script>
   <script src="/js/moment.js"></script>
   <title>Susana Canel</title>
+
 </head>
 
 <body>
-  <div class="encabezamiento">
+  <style>
+    .bg-dark {
+      background-color: #04685a !important
+    }
+
+    .foto {
+      margin-top: 8rem !important;
+      width: 45%;
+      padding: 16px;
+      border: 1px solid #444444;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      border-radius: 8px;
+      background-color: #ffffff;
+      padding-bottom: 2px;
+    }
+
+    .texto {
+      margin-top: 9rem !important;
+      width: 45%;
+      margin-left: 0rem;
+      font-size: larger;
+      line-height: 1.3rem;
+    }
+    
+    .video {
+      width: 100%;
+    }
+    
+    @media (max-width: 900px) {
+      .foto {
+        width: 98%;
+      }
+      
+      .texto {
+        margin-top: 1rem !important;
+        width: 98%;
+      }
+
+    }
+
+    .foto-interior {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    .contenedor {
+      display: flex;
+      padding: 1.5rem 3rem 1.5rem 3rem;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  </style>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+    <a class="navbar-brand" href="#">Susana Canel</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/index.php">Inicio<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre mi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog/Vlog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Asesoramiento</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contactame</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Subscríbete</a>
+        </li>
+      </ul>
+      <form class="form-inline mt-1 mt-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!-- <div class="encabezamiento">
     <div class="contenedoricono">
       <img src="/img/inicio/susana.jpg" class="icono" />
       <span class="titulo"><span>Susana Canel</span>
@@ -42,13 +132,12 @@
           <li><a id="asesoramiento" href="/asesoramiento.php">Asesoramiento</a></li>
           <li><a id="contactame" href="/contacto.php">Contactame</a></li>
           <li><a id="subscribite" href="/subscripcion.php">Subscríbete</a></li>
-          <li><a id="chania" href="/chania.html">Chania</a></li>
-          <li><a id="chania" href="/usabootstrap.html">Usa Bootstrap</a></li>
+          <li><a id="chania" href="/chania.html">Chantia</a></li>
         </ul>
       </nav>
     </div>
     <div class="clearer"></div>
-  </div>
+  </div> -->
   <script>
     const buscar = () => {
       const texto = document.getElementById("textobusqueda").value;
@@ -68,7 +157,6 @@
     </div>
     <div class="texto">
       <div class="centrada">
-
         <h3>Soy Susana Canel.</h3>
         <p>
           Me apasiona viajar. A los 23 años hice mi primer viaje a Roma y enloquecí de amor por
@@ -91,7 +179,8 @@
     </div>
 
     <div class="foto">
-      <img class="foto-interior zoom" src="http://susanacanel.com/img/sobremi/matera.jpg" title="En la fascinante Matera." />
+      <img class="foto-interior zoom" src="http://susanacanel.com/img/sobremi/matera.jpg"
+        title="En la fascinante Matera." />
       <div class="leyenda">En la fascinante Matera.</div>
     </div>
     <div class="texto">
@@ -119,7 +208,8 @@
     </div>
 
     <div class="foto">
-      <img class="foto-interior zoom" src="http://susanacanel.com/img/sobremi/con-mi-instructor -de-kayak-mar-del-plata.jpg"
+      <img class="foto-interior zoom"
+        src="http://susanacanel.com/img/sobremi/con-mi-instructor -de-kayak-mar-del-plata.jpg"
         title="Invierno en Mar del Plata. Con mi instructor de kayak." />
       <div class="leyenda">Con mi instructor de kayak. Invierno en Mar del Plata.</div>
     </div>
@@ -285,8 +375,8 @@
       </p>
     </div>
   </div>
-  <div class="contenedortexto">
-    <div class="textofoto">
+  <div class="contenedor">
+    <div class="texto">
       <p style="text-align: justify;"><strong>Soy muy curiosa</strong>, me gusta saber de todo, por eso <strong>me
           gusta viajar</strong>, conocer gente, interiorizarme por las costumbres de cada lugar. En la primera
         foto estoy en Matera, en la Región Basilicata. Esta ciudad es absolutamente increíble. Por algo la elegí
@@ -325,7 +415,7 @@
         e improvisé!!! Qué frío, toda empapada y sin poderme secar. Pero me divertí mucho ¡El que quiere
         celeste, que le cueste!</p>
     </div>
-    <div class="textotexto">
+    <div class="texto">
 
       <p style="text-align: justify;">Con mayor frecuencia navego en velero. <strong>Me recibí de timonel de yate
           a vela</strong> <strong>y motor</strong> <strong>¡Me gustan las olas, el viento y las
@@ -417,7 +507,15 @@
       </div>
     </div>
   </div>
-
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>

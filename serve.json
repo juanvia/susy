@@ -1,0 +1,8 @@
+{
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/usabootstrap.html"
+    }
+  ]
+}

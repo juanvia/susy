@@ -271,18 +271,12 @@ body {
 
 .contenedor {
   display: flex;
-  padding: 2.5rem 3rem 1.5rem 3rem;
+  padding: 1.5rem 3rem 1.5rem 3rem;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.contenedortexto {
-  display: flex;
-  padding: 1.5rem 3rem 1.5rem 3rem;
-  flex-wrap: wrap;
-}
-
-.textofoto {
+.foto {
   width: 528px;
   padding: 16px;
   border: 1px solid #07b8a0;
@@ -290,11 +284,10 @@ body {
   border-radius: 8px;
 }
 
-.textotexto {
+.texto {
   margin-left: 4rem;
   width: 528px;
   padding: 16px;
-  border: 1px solid #07b8a0;
   margin-bottom: 4px;
   border-radius: 8px;
 }
@@ -347,17 +340,6 @@ body {
   padding: 0 0.5rem;
 }
 
-@media (max-width: 900px) {
-  .foto {
-    width: 98%;
-  }
-
-  .texto {
-    margin-top: 1rem !important;
-    width: 98%;
-  }
-
-}
 
 .titulo {
   margin: 1rem 0 0 1rem;
@@ -390,7 +372,7 @@ input {
   height: 16rem;
 }
 
-/* DiseÃ±o del indice del blog y de los articulos  */
+/* Diseño del indice del blog y de los articulos  */
 .anecdotas {
   background-color: greenyellow;
   color: black;
@@ -602,6 +584,7 @@ font-family: 'Lovers Quarrel', cursive; */
   flex-basis: 10%;
 }
 
+
 .contenedorcarpetas {
   padding: 2rem 2rem;
   background-color: white;
@@ -708,6 +691,7 @@ font-family: 'Lovers Quarrel', cursive; */
   font-weight: 300;
   font-size: 18.72px;
   padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .pide-comentario {
@@ -796,3 +780,69 @@ p {
 h2 {
   padding-bottom: 1rem;
 }
+
+.contenedor-comentario {
+  color: black;
+  background-color: white;
+  border-radius: 8px;
+  display: block;
+  border: 1px solid #444444;
+  margin-bottom: 3rem;
+  flex-basis: 100%;
+  padding: 16px;
+}
+
+.sin-padding {
+  padding: 0
+}
+
+.contenedor-comentario input::placeholder,
+.contenedor-comentario textarea::placeholder {
+  font-style: italic;
+}
+
+.contenedor-enviar {
+  text-align: right;
+  padding-top: 1rem;
+}
+
+.dejatucomentario {
+  margin-bottom: 24px;
+}
+
+@media (max-width: 900px) {
+  .foto {
+    width: 100%;
+  }
+
+  .texto {
+    margin-top: 1rem !important;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .foto {
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  
+  .texto {
+    margin-top: 1rem !important;
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  
+  .contenedor {
+    padding: 0;
+  }
+  .contenedor-articulo {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+}
+

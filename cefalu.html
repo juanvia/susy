@@ -1,0 +1,1284 @@
+<!-- --------------------------------------  HEADER ------------------------------------------------------------- -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/jpg" href="/img/favicon/susanacanel.jpg">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lovers+Quarrel&family=Marck+Script&family=Parisienne&family=Satisfy&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/91636700df.js" crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ramda/0.25.0/ramda.min.js"></script>
+  <script src="/js/moment.js"></script>
+  <title>Susana Canel</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="/img/inicio/susana.jpg" class="icono" />
+      <span>Susana Canel</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <div style="float:left">
+            <input class="form-control mr-sm-2 transparente solo-con-left-padding buscar" type="text"
+              placeholder="Buscar..." aria-label="Search" id="textobusqueda">
+          </div>
+          <div style="float:left">
+            <button class="btn btn-outline-success my-2 my-sm-0" onclick="buscar()">
+              <span class="material-icons">search</span>
+            </button>
+          </div>
+          <div style="clear:both"></div>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" id="index" href="/index.php">Inicio<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="sobremi" href="/sobremi.php">Sobre mi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="blogvlog" href="/blogvlog.php">Blog/Vlog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="asesoramiento" href="/asesoramiento.php">Asesoramiento</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contactame" href="/contacto.php">Contactame</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="subscribite" href="/subscripcion.php">Subscríbete</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <script>
+    const buscar = () => {
+      const texto = document.getElementById("textobusqueda").value;
+      // texto = texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+      const urlDeBusqueda = `/buscar.php?textoABuscar=${texto}`
+      location.href = urlDeBusqueda.replace('#', '%23');
+    }
+  </script>
+  <!-- ------------------------------------ FIN HEADER ----------------------------------------------------------- -->
+  <p style="display: none;">
+    #relatos #anécdotas
+  </p>
+  <div class="contenedor-articulo relatos">
+
+    <!----------------------------------- FILA FOTO - TEXTO ----------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO -------------------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/02-Cefalu-Playa-y-botes.jpg"
+          title="Cefalú, playa y botes." />
+        <div class="leyenda">Cefalù. Montañas, casas, playa y botes.</div>
+      </div>
+
+      <!-- TEXTO   ---------------------------------------------------------------------------->
+      <div class="texto">
+        <h3>Descubriendo Cefalù, Sicilia.</h3>
+        <p>
+          Por suerte fui a Cefalù ¡Qué bello que es!
+          Me alojaba en Palermo y decidí dedicar medio día para andar en tren a conocer Cefalù y volver a la noche.
+        </p>
+        <p>Como
+          siempre me sucede, me resultó muy poco tiempo!!! Sería lindo quedarme una o dos noches…
+        </p>
+        <p>Llegué a la estación y comencé a caminar hacia la parte histórica que está muy cerca. En el caso histórico me
+          encontré en medio de hermosas callecitas llenas de historia. Las montañas de rocas por un lado, con un
+          castillo en la cima de una de ellas, llamado Rocca di Cefalù, y el mar por el otro lado.
+        </p>
+      </div>
+    </div>
+
+    <!----------------------------------- FILA TEXTO - FOTO ----------------------------------->
+
+    <div class="contenedor">
+      <!-- TEXTO   ---------------------------------------------------------------------------->
+      <div class="texto">
+        <h3>Me fascinó la arquitectura.</h3>
+        <p>Se supone que el origen de Cefalù es fenicio. Pero es muy ecléctica debido a las distintas
+          civilizaciones que la han habitado. Entre éstas los Normandos que han dejado hermosas edificaciones.
+        </p>
+        <p>Caminando caminando…
+          Oh sorpresa ¡qué belleza! La Catedral!!! Es normanda de estilo bizantino.
+        </p>&nbsp;
+        <h3>Leyenda del origen de la Catedral</h3>
+        <p>
+          Cuenta la legenda, que el conquistador normando Ruggero II d’Altavilla, re di Sicilia, Puglia e Calabria,
+          después de escapar de una tempestad llegó sano y
+          salvo a
+          Cefalú. Para cumplir con el voto por la gracia recibida ordenó la construcción de la Catedral, allá por el
+          año 1131.
+        </p>
+
+      </div>
+
+      <!-- FOTO --------------------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/03-Catedral-Cefalu.jpg"
+          title="Cefalú, Catedral. A gloria del SS. Salvatore e dei Santi Pietro e Paolo." />
+        <div class="leyenda">Cefalù. Catedral. "A gloria del SS. Salvatore e dei Santi Pietro e Paolo."
+        </div>
+      </div>
+    </div>
+
+    <!----------------------------------- FILA FOTO - TEXTO ----------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ----------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/04-Cefalu-Cafe-y-cannolo-siciliano.jpg"
+          title="Cefalù. Caffè e cannolo siciliano." />
+        <div class="leyenda">Cefalù. Caffè e cannolo siciliano."
+        </div>
+      </div>
+
+      <!-- TEXTO   ---------------------------------------------------------------------------->
+      <div class="texto">
+        <h3>Cannolo siciliano</h3>
+        <p>
+          Llegando al centro histórico... lo primero es lo primero, a reponer fuerzas!!! ¿Cómo? con un buen expresso,
+          cannoli siciliani y Coca Cola… qué
+          mal Susana, esto de la Coca Cola es imperdonable...lo admito!!!!
+        </p>
+        <p>
+          Ojo, a no ofender a los sicilianos muy orgullosos por tener de las mejores pastelerías del Mundo, famosísima
+        </p>
+        <p> ¡Quiero decir que mejor no se te ocurra pedir una especialidad de otra región, se ofenden
+          mucho y con razón! Le pasó a una prima mía, pidió una especialidad napolitana, se ofendió tanto el dueño de la
+          «pasticceria» que no le vendió nada. Mi prima habla italiano, el hombre habrá pensado que era italiana. Fue
+          gracioso, porque el pastelero le preguntó si sabía "dónde" estaba, ella le respondió que en «Sicilia», y esto
+          lo
+          preguntó
+          para hacerle notar que lo que pedía era de otra Región.
+        </p>
+        <p>Realmente las especialidades sicilianas son
+          exquisitas. Muero por la cassata siciliana, no es un helado, es una especie de masita en base a almendras.
+        </p>
+      </div>
+    </div>
+
+    <!----------------------------------- FILA TEXTO - FOTO ----------------------------------->
+
+    <div class="contenedor">
+      <!-- TEXTO   ---------------------------------------------------------------------------->
+      <div class="texto">
+        <h3>En el Centro histórico.</h3>
+        <p>
+          Caminé unas nueve cuadras hasta llegar a la Catedral. O sea, que está ahí nomás de la estación de trenes. En
+          el camino vi la Iglesia del Purgatorio y en la Piazza Garibaldi vi la torre con el reloj.
+        </p>
+        <p>
+          La Piazza del Duomo, frente a la Catedral, es un lugar muy pintoresco, con confiterías con mesitas, palmeras,
+          macetones con flores, negocios de souvenirs, edificios públicos, distintos estilos arquitectónicos, en fin, de
+          todo un poco ¡Y reina el sol! Subiendo una alta y ancha escalinata se llega al atrio de la Catedral al que se
+          entra a través de un portón de hierro forjado. Está rodeado de un bellísimo enrejado.
+        </p>&nbsp;
+        <p>
+          El casco histórico está encajonado por un lado por el mar y por el otro por una montaña de roca absolutamente
+          vertical, es increíble. No tuve tiempo de subirla. Hay un camino para llegar a la cumbre y
+          visitar las ruinas de un castillo llamado Rocca. Quedará pendiente para otro viaje.
+        </p>
+      </div>
+
+      <!-- FOTO ------------------------------------>
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/05-Cefalu-Piazza-Garibaldi-Orologio.jpg"
+          title="Cefalù. Piazza Garibaldi. Orologio." />
+        <div class="leyenda">Cefalù. Piazza Garibaldi. Orologio.
+        </div>
+      </div>
+    </div>
+
+    <!----------------------------------- FILA FOTO - TEXTO ----------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ------------------------------------>
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/06-Cefalu-Muelle-y-Rocca.jpg"
+          title="Cefalù. El muelle y la Rocca." />
+        <div class="leyenda">Cefalù. El muelle y la Rocca.
+        </div>
+      </div>
+
+      <!-- TEXTO   ---------------------------------------------------------------------------->
+      <div class="texto">
+        <h3>En la costa.</h3>
+        <p>
+          Las casas están directamente sobre el mar porque hay partes en que no hay arena. Cerca del muelle hay una
+          playita donde descansan pintorescos botes de colores. Cuando descubrí un banco vacío, de esos que se ven en la
+          foto, que están en el muelle,
+          de frente al mar, me senté a ver ese increíble paisaje ¡Qué paz! ¡Todo tan romántico! Claro que no tuve que
+          esperar mucho tiempo para que se me acercara un italiano a charlar e invitarme a un café. Rechacé la oferta.
+          Me causó gracia. Seguí caminando por el muelle. Encontré unas barras de hierro llenas de candados oxidados
+          ¿También los amores se habrán oxidado?
+        </p>
+      </div>
+    </div>
+
+    <!----------------------------------- FILA TEXTO - FOTO ----------------------------------->
+
+    <div class="contenedor">
+      <!-- TEXTO   ---------------------------------------------------------------------------->
+      <div class="texto">
+        <h3>Il tramonto</h3>
+        <p>
+          Luego volví hacia el casco histórico para recorrer otras callecitas,
+          más comerciales que las que ya había recorrido. Y, lentamente acercarme a la estación para tomar el tren. Pero
+          esta vez por la costanera con rambla. Esta parte está fuera del casco histórico, la edificación es nueva y
+          tiene unas hermosas playas muy anchas. Y allí me encontró «il tramonto« (el atardecer). Es hermoso el color
+          dorado que adquiere Cefalù al atardecer. Lo puedes apreciar en la foto.
+        </p>
+      </div>
+
+      <!-- FOTO ------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/07-Cefalu-Vista.jpg"
+          title="Cefalù. Vista desde la playa ancha en la parte moderna de la ciudad." />
+        <div class="leyenda">Cefalù. Vista desde la playa ancha en la parte moderna de la ciudad.
+        </div>
+      </div>
+    </div>
+
+    <!----------------------------------- FILA FOTO - TEXTO ----------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ---------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/08-Cefalu-centro-historico-noche.jpg"
+          title="Cefalù. Centro histórico de noche." />
+        <div class="leyenda">Cefalù. Centro histórico de noche.
+        </div>
+      </div>
+
+      <!-- TEXTO   ---------------------------------------------------------------------------->
+      <div class="texto">
+        <h3>¡Peripecias con el tren!</h3>
+        <p>
+          Llego a la estación con tiempo como para beber un cafecito en el bar de la estación, de pie porque no
+          hay donde
+          sentarse, y
+          tomar el tren ¡Tomar el tren! Eso creía!!! Pero confirmé la información que había leído en los blogs de otros
+          viajeros, en Sicilia no se puede confiar en los medios de transporte. Son un desastre. No cumplen los
+          horarios, los cancelan sin aviso ¡Socorro! En la pantalla decía que mi tren tenía una demora de 15 minutos. Me
+          siento en la estación a esperar, comenzaba a hacer frío porque ya era de noche y había viento. Corrigen la
+          información ¡Ahora la demora es de 50 minutos! ¡Si lo hubiera sabido antes me quedaba en el centro histórico
+          a cenar! Como veo que va para largo vuelvo al bar para ver qué puedo comer y … están cerrando!!! Solamente
+          pude comprar una bolsita de papas fritas. Decidí volver al centro histórico ya que no había nada de nada en la
+          estación. Gracias a eso pude conocer Cefalù de noche y la cosa sorprendente es que estaba lleno de gente.
+          Tenía mucha
+          vida, mucho
+          movimiento. Muy alegre. Me gusta.
+        </p>
+      </div>
+    </div>
+
+
+    <!----------------------------------- FILA TEXTO - FOTO ----------------------------------->
+
+    <div class="contenedor">
+      <!-- TEXTO   ---------------------------------------------------------------------------->
+      <div class="texto">
+        <h3>Sucedió un 21 de marzo de 2017</h3>
+        <p>
+          Volví a la estación y ahora mi tren tenía un atraso de 1 hora y quarto!!! ¿Podés
+          creerlo? ¡Habría podido cenar! Pero vi que estaba por llegar otro tren que también iba a Palermo, así que tras
+          una espera de algunos minutos tomé ese. Y me comí las papas fritas para ir tirando. La cena fue en Palermo.
+
+        </p>
+        <p>
+          A continuación agrego más fotos. El motivo de agregar más fotos es porque tal vez te ocurra como a mí. Cuando
+          quiero hacerme una idea de cómo es un lugar para decidir visitarlo,
+          busco fotos en la Web y encuentro siempre las mismas fotos repetidas, fotos de los lugares turísticos, de
+          monumentos, iglesias, en fin, no me
+          hago una idea de cómo es el lugar, de qué cosa voy a encontrar al llegar. Y como yo saco fotos a cada paso,
+          bueno,
+          las organicé en el orden en que iba caminando y descubriendo los sitios. Me gusta sacar fotos de cosas que me
+          llamen la atención, por ejemplo, el auto intentando girar en una callecita estrecha, los candados oxidados
+          dejados por los amantes, los árboles saliendo de las paredes de las casas, la decoración de los negocios de
+          artesanías, las vidrieras con las artesanías, la gente tomando sol en la escalinata de la catedral, otros
+          sentados admirando el paisaje, la Rocca con los árboles arriba, las calzadas de travertino con ese brillo tan
+          particular. En fin, miles de detalles que hacen de Cefalù un lugar mágico.
+        </p>
+        <p>Por eso mientras sueñas con tu viaje a
+          Cefalú puedes hacerte una idea de cómo es mirando mis fotos.
+        </p>
+      </div>
+
+      <!-- FOTO ---------------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/09-Cefalu-centro-historico-noche.jpg"
+          title="Cefalù. Bar, restaurante Helios, de noche. Via Giacomo Matteotti." />
+        <div class="leyenda">Cefalù. Bar, restaurante Helios, de noche. Via Giacomo Matteotti.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO -------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/10-Cefalu-caminado-al-centro-historico.jpg"
+          title="Cefalù. Caminando hacia el centro histórico." />
+        <div class="leyenda">Cefalù. Caminando hacia el centro histórico.
+        </div>
+      </div>
+
+      <!-- FOTO -------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/11-Cefalu-Calle-Tipica.jpg"
+          title="Cefalù. Calle típica del centro histórico. Via Candeloro y Corso Ruggero." />
+        <div class="leyenda">Cefalù. Calle típica del centro histórico. Via Candeloro y Corso Ruggero.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ------------------------------------>
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/12-Cefalu-Calle.jpg"
+          title="Cefalù. Calle típica del centro histórico." />
+        <div class="leyenda">Cefalù. Calle típica del centro histórico.
+        </div>
+      </div>
+
+      <!-- FOTO ----------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/13-Cefalu-Calle-con-naranjos.jpg"
+          title="Cefalù. Calle con naranjos." />
+        <div class="leyenda">Cefalù. Calle con naranjos.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ------------------------>
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/14-Cefalu-Encuentro-de-calles.jpg"
+          title="Cefalù. Via Umberto I° y Via Giacomo Matteotti." />
+        <div class="leyenda">Cefalù. Via Umberto I° y Via Giacomo Matteotti.
+        </div>
+      </div>
+
+      <!-- FOTO ------------------------>
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/15-Cefalu-Piazza-Garibaldi.jpg"
+          title="Cefalù. Piazza Garibaldi." />
+        <div class="leyenda">Cefalù. Piazza Garibaldi.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ----------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/16-Cefalu-Piazza Garibaldi.jpg"
+          title="Cefalù. Piazza Garibaldi. Via Umberto I°." />
+        <div class="leyenda">Cefalù. Piazza Garibaldi. Via Umberto I°.
+        </div>
+      </div>
+
+      <!-- FOTO -------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/17-Cefalu-Corso Ruggero.jpg"
+          title="Cefalù. Corso Ruggero, caminando hacia la catedral." />
+        <div class="leyenda">Cefalù. Corso Ruggero, caminando hacia la catedral.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ------------------------>
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/18-Cefalu-Terraza-y-bar.jpg"
+          title="Cefalù. Bar, restaurante Helios. Via Giacomo Matteotti." />
+        <div class="leyenda">Cefalù. Bar, restaurante Helios. Via Giacomo Matteotti.
+        </div>
+      </div>
+
+      <!-- FOTO ------------------------------------------------------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/19-Cefalu-Via-Giacomo-Matteotti.jpg"
+          title="Cefalù. Via Giacomo Matteotti." />
+        <div class="leyenda">Cefalù. Via Giacomo Matteotti.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ------------------------------------------------------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/20-Cefalu-entrando.jpg"
+          title="Cefalù. Entrando al centro histórico. Via Giacomo Matteotti." />
+        <div class="leyenda">Cefalù. Entrando al centro histórico. Via Giacomo Matteotti.
+        </div>
+      </div>
+
+      <!-- FOTO ------------------------------------------------------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/21-Cefalu-Farol.jpg"
+          title="Cefalù. Calle típica del centro histórico." />
+        <div class="leyenda">Cefalù. Calle típica del centro histórico.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ------------------------------------------------------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/22-Cefalu-Escalera.jpg"
+          title="Cefalù. Lavadero medieval Fiume Cefalino. Via Vittorio Emanuele." />
+        <div class="leyenda">Cefalù. Lavadero medieval Fiume Cefalino. Via Vittorio Emanuele.
+        </div>
+      </div>
+
+      <!-- FOTO --------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/23-Cefalu-Escalera-con-Maceteros.jpg"
+          title="Cefalù. Centro histórico. Via Caracciolo." />
+        <div class="leyenda">Cefalù. Centro histórico. Via Caracciolo.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ---------------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/24-Cefalu-Esquina-Bar.jpg"
+          title="Cefalù. Antica Porta Terra. Bar, gelateria. Piazza Garibaldi." />
+        <div class="leyenda">Cefalù. Antica Porta Terra. Bar, gelateria. Piazza Garibaldi.
+        </div>
+      </div>
+
+      <!-- FOTO ------------------------------>
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/25-Cefalu-Señoras-con-Compras.jpg"
+          title="Cefalù. Athelier D' Arte. Corso Ruggero." />
+        <div class="leyenda">Cefalù. Athelier D' Arte. Corso Ruggero.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ------------------------------------>
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/26-Cefalu-Negocio-de-souvenirs.jpg"
+          title="Cefalù. Calle típica del centro histórico." />
+        <div class="leyenda">Cefalù. Calle típica del centro histórico.
+        </div>
+      </div>
+
+      <!-- FOTO ----------------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/27-Cefalu-Esquina.jpg"
+          title="Cefalù. Centro histórico. Via Giacomo Matteotti." />
+        <div class="leyenda">Cefalù. Centro histórico. Via Giacomo Matteotti.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO --------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/28-Cefalu-Souvenirs.jpg"
+          title="Cefalù. A Lumera di Brocato Giuseppe, tienda de cerámicas. Corso Ruggero." />
+        <div class="leyenda">Cefalù. A Lumera di Brocato Giuseppe, tienda de cerámicas. Corso Ruggero.
+        </div>
+      </div>
+
+      <!-- FOTO ------------------------------>
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/29-Cefalu-esquinas.jpg"
+          title="Cefalù. Calle típica del centro histórico." />
+        <div class="leyenda">Cefalù. Calle típica del centro histórico.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO --------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/30-Cefalu-Chiesa-de-Santo-Stefano-protomartire.jpg"
+          title="Cefalù. Chiesa di Santo Stefano protomartire del Purgatorio. Corso Ruggero. Piazza G Battista Spinola." />
+        <div class="leyenda">Cefalù. Chiesa di Santo Stefano protomartire del Purgatorio. Corso Ruggero.
+        </div>
+      </div>
+
+      <!-- FOTO --------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/31-Cefalu-palmeras.jpg"
+          title="Cefalù. Centro histórico. Via Giacomo Matteotti." />
+        <div class="leyenda">Cefalù. Centro histórico. Via Giacomo Matteotti.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/32-Cefalu-calle.jpg"
+          title="Cefalù. Centro histórico. Via Giacomo Matteotti." />
+        <div class="leyenda">Cefalù. Centro histórico. Via Giacomo Matteotti.
+        </div>
+      </div>
+
+      <!-- FOTO --------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/33-Cefalu-Vidriera-con-artesanías.jpg"
+          title="Cefalù. Centro histórico. Vidriera con artesanías." />
+        <div class="leyenda">Cefalù. Centro histórico. Vidriera con artesanías.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/34-Cefalu-maniobrando.jpg"
+          title="Cefalù. Automovilista intentando girar. Corso Ruggero." />
+        <div class="leyenda">Cefalù. Automovilista intentando girar. Corso Ruggero.
+        </div>
+      </div>
+
+      <!-- FOTO ---------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/35-Cefalu-Piazza-del-Duomo.jpg"
+          title="Cefalù. Corso Ruggero y Piazza del Duomo. Catedral." />
+        <div class="leyenda">Cefalù. Corso Ruggero y Piazza del Duomo. Catedral.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/36-Cefalu-Duomo.jpg"
+          title="Cefalù. Via Seminario. Catedral. Aprovechando el solcito." />
+        <div class="leyenda">Cefalù. Via Seminario. Aprovechando el solcito. Catedral. "A gloria del SS. Salvatore".
+        </div>
+      </div>
+
+      <!-- FOTO ---------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/37-Cefalu-Piazza-del-Duomo-Bar.jpg"
+          title="Cefalù. Bar Duomo. Piazza del Duomo." />
+        <div class="leyenda">Cefalù. Bar Duomo. Piazza del Duomo.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO --------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/38-Cefalu-Piazza-del-Duomo-Edificio-típico.jpg"
+          title="Cefalù. Via Mandralisca. Escalinata de la Catedral." />
+        <div class="leyenda">Cefalù. Via Mandralisca. Escalinata de la Catedral.
+        </div>
+      </div>
+
+      <!-- FOTO ---------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/39-Cefalu-Duomo-Atrio.jpg"
+          title="Cefalù. Atrio de la Catedral." />
+        <div class="leyenda">Cefalù. Atrio de la Catedral.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ------------------------------------------>
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/40-Cefalu-Duomo.jpg"
+          title="Cefalù. Via Seminario. Piazza del Duomo. Catedral." />
+        <div class="leyenda">Cefalù. Via Seminario. Piazza del Duomo. Catedral.
+        </div>
+      </div>
+
+      <!-- FOTO ------------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/41-Cefalu-Duomo.jpg"
+          title="Cefalù. Portón de hierro forjado de la Catedral. Via Seminario." />
+        <div class="leyenda">Cefalù. Portón de hierro forjado de la Catedral. Via Seminario.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ------------------------------------>
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/42-Cefalu-duomo.jpg"
+          title="Cefalù. Catedral. A gloria del SS. Salvatore e dei Santi Pietro e Paolo." />
+        <div class="leyenda">Cefalù. Catedral. "A gloria del SS. Salvatore"
+        </div>
+      </div>
+
+      <!-- FOTO --------------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/43-Cefalu-duomo.jpg"
+          title="Cefalù. Altar bizantino de la Catedral. A gloria del SS. Salvatore e dei Santi Pietro e Paolo." />
+        <div class="leyenda">Cefalù. Altar bizantino de la Catedral. "A gloria del SS. Salvatore".
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ---------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/44-Cefalu-Piazza-duomo.jpg"
+          title="Cefalù. Bar Duomo. Piazza del Duomo." />
+        <div class="leyenda">Cefalù. Bar Duomo. Piazza del Duomo.
+        </div>
+      </div>
+
+      <!-- FOTO ------------------------------>
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/45-Cefalu-Piazza-duomo.jpg"
+          title="Cefalù. Seminario Vescovile. Via Seminario y Via Mandralisca." />
+        <div class="leyenda">Cefalù. Seminario Vescovile. Via Seminario y Via Mandralisca.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO -------------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/46-Cefalu-Patio-con-río.jpg"
+          title="Cefalù. Lavadero medieval Fiume Cefalino. Via Vittorio Emanuele." />
+        <div class="leyenda">Cefalù. Lavadero medieval Fiume Cefalino. Via Vittorio Emanuele.
+        </div>
+      </div>
+
+      <!-- FOTO ------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/47-Cefalu-Abertura.jpg"
+          title="Cefalù. Porta Pescara. Via Porto Salvo." />
+        <div class="leyenda">Cefalù. Porta Pescara. Via Porto Salvo.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO --------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/48-Cefalu-Muelle.jpg"
+          title="Cefalù. Muelle turístico." />
+        <div class="leyenda">Cefalù. Muelle turístico.
+        </div>
+      </div>
+
+      <!-- FOTO ----------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/49-Cefalu-Muelle-con-gente.jpg"
+          title="Cefalù. Playa y muelle turístico." />
+        <div class="leyenda">Cefalù. Playa y muelle turístico.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ------------------------------>
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/50-Cefalu-Muelle-Montaña.jpg"
+          title="Cefalù. Montañas, mar y romántico muelle turístico." />
+        <div class="leyenda">Cefalù. Montañas, mar y romántico muelle turístico.
+        </div>
+      </div>
+
+      <!-- FOTO -------------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/51-Cefalu-Playa-botes.jpg"
+          title="Cefalù. Montañas, playa, botes, mar y muelle turístico." />
+        <div class="leyenda">Cefalù. Montañas, playa, botes, mar y muelle turístico.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ----------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/52-Cefalu-Playa-gente.jpg"
+          title="Cefalù. Entrada al muelle turístico, botes, playa y Porta Pescara." />
+        <div class="leyenda">Cefalù. Entrada al muelle turístico, botes, playa y Porta Pescara.
+        </div>
+      </div>
+
+      <!-- FOTO ----------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/53-Cefalu-Playa-y-casas-sobre-el-mar.jpg"
+          title="Cefalù. Montañas, casas, mar y rocas." />
+        <div class="leyenda">Cefalù. Montañas, casas, mar y rocas.
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO -------------------------------------------------------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/54-Cefalu-Casas-sobre-el-mar.jpg"
+          title="Cefalù. Casas reflejadas en el mar." />
+        <div class="leyenda">Cefalù. Casas reflejadas en el mar.
+        </div>
+      </div>
+      <!-- ESPACIO ENTRE FOTO Y TEXTO   -------------------------------------------------------->
+      <div class="contenedor-espacio">&nbsp;</div>
+      <!-- FOTO --------------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/55-Cefalu-Bote.jpg"
+          title="Cefalù. Bote y mar cristalino." />
+        <div class="leyenda">Cefalù. Bote y mar cristalino.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/56-Cefalu-Desde-el-muelle.jpg"
+          title="Cefalù. Muelle turístico. Porta Pescara. Rocca." />
+        <div class="leyenda">Cefalù. Muelle turístico. Porta Pescara. Rocca.
+        </div>
+      </div>
+
+      <!-- FOTO ------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/57-Cefalu-Candados.jpg"
+          title="Cefalù. Candados oxidados en el muelle turístico." />
+        <div class="leyenda">Cefalù. Candados oxidados en el muelle turístico.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ------------------------------------------------------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/58-Cefalu-Casas-reflejadas.jpg"
+          title="Cefalù. Casas reflejadas en el mar." />
+        <div class="leyenda">Cefalù. Casas reflejadas en el mar.
+        </div>
+      </div>
+
+      <!-- FOTO -------------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/59-Cefalu-Fuente-Mar.jpg"
+          title="Cefalù. Bastione di Capo Marchiafav." />
+        <div class="leyenda">Cefalù. Bastione di Capo Marchiafav.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ------------------------------------------------------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/60-Cefalu-Bote-Rocca.jpg"
+          title="Cefalù. Bote, mar, casas y Rocca." />
+        <div class="leyenda">Cefalù. Bote, mar, casas y Rocca.
+        </div>
+      </div>
+
+      <!-- FOTO -------------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/61-Cefalu.jpg"
+          title="Cefalù. Casa en la zona del Bastione di Capo Marchiafav." />
+        <div class="leyenda">Cefalù. Casa en la zona del Bastione di Capo Marchiafav.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/62-Cefalu-Techos-Bosque-Rocca.jpg"
+          title="Cefalù. Techos, árboles, Rocca. En la zona del Bastione di Capo Marchiafav." />
+        <div class="leyenda">Cefalù. Techos, árboles, Rocca. En la zona del Bastione di Capo Marchiafav.
+        </div>
+      </div>
+
+      <!-- FOTO ---------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/63-Cefalu.jpg"
+          title="Cefalù. Vista desde el Bastione di Capo Marchiafav." />
+        <div class="leyenda">Cefalù. Vista desde el Bastione di Capo Marchiafav.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ------------------------------>
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/64-Cefalu-Arboles-en-una-escalera.jpg"
+          title="Cefalù. Escalera hacia el Lavadero medieval Fiume Cefalino. Via Vittorio Emanuele." />
+        <div class="leyenda">Cefalù. Escalera hacia el Lavadero medieval Fiume Cefalino. Via Vittorio Emanuele.
+        </div>
+      </div>
+
+      <!-- FOTO ---------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/65-Palazzo-Peraino-dei-baroni-di-Mandralisca.jpg"
+          title="Cefalù. Palazzo Peraino dei baroni di Mandralisca. Piazza del Duomo." />
+        <div class="leyenda">Cefalù. Palazzo Peraino dei baroni di Mandralisca. Piazza del Duomo.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ------------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/66-Cefalu-Chiesa-de-Santo-Stefano-protomartire.jpg"
+          title="Cefalù. Chiesa di Santo Stefano protomartire del Purgatorio. Corso Ruggero. Piazza G Battista Spinola." />
+        <div class="leyenda">Cefalù. Chiesa di Santo Stefano protomartire del Purgatorio. Corso Ruggero.
+        </div>
+      </div>
+
+      <!-- FOTO ------------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/67-Cefalu-Detalle-arquitectonico.jpg"
+          title="Cefalù. Centro histórico. Via Vittorio Emanuele y Via Porto Salvo." />
+        <div class="leyenda">Cefalù. Centro histórico. Via Vittorio Emanuele y Via Porto Salvo.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ------------------------------------>
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/68-Cefalu-Bar-y-Farol.jpg"
+          title="Cefalù. Ristorante, Bar, Pizzeria, La Pergola. Corso Ruggero." />
+        <div class="leyenda">Cefalù. Ristorante, Bar, Pizzeria, La Pergola. Corso Ruggero.
+        </div>
+      </div>
+
+      <!-- FOTO ------------------------------------>
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/69-Cefalu-Edificio-Medieval.jpg"
+          title="Cefalù. Osterio Magno. Via G. Amendola." />
+        <div class="leyenda">Cefalù. Osterio Magno. Via G. Amendola.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/70-Cefalu-Atardecer-2.jpg"
+          title="Cefalù. Con los colores dorados del atardecer." />
+        <div class="leyenda">Cefalù. Con los colores dorados del atardecer.
+        </div>
+      </div>
+
+      <!-- FOTO ----------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/71-Cefalu-atardecer-3.jpg"
+          title="Cefalù. Caminando por la playa dejo cada vez más lejos el centro histórico al atardecer." />
+        <div class="leyenda">Cefalù. Caminando por la playa dejo cada vez más lejos el centro histórico al atardecer.
+
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ---------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/72-Cefalu-Playa-ancha.jpg"
+          title="Cefalù. Playa ancha en la parte moderna de la ciudad." />
+        <div class="leyenda">Cefalù. Playa ancha en la parte moderna de la ciudad.
+        </div>
+      </div>
+
+      <!-- FOTO ------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/73-Cefalu-atardecer-5.jpg"
+          title="Cefalù. Hermosa puesta del sol sobre el mar." />
+        <div class="leyenda">Cefalù. Hermosa puesta del sol sobre el mar.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO ------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/74-Cefalu-atardecer-4.jpg"
+          title="El centro histórico se sumerge en las tinieblas. Se destacan los campanarios de la Catedral." />
+        <div class="leyenda">Cefalù. El centro histórico se sumerge en las tinieblas. Se destacan los campanarios.
+        </div>
+      </div>
+
+      <!-- FOTO ------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/75-Cefalu-Mar-y-nubes.jpg"
+          title="Cefalù. Avanzan las nubes y la oscuridad." />
+        <div class="leyenda">Cefalù. Avanzan las nubes y la oscuridad.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO --------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/76-Cefalu-rambla-atardecer-5.jpg"
+          title="Cefalù. Disfrutando de un plácido atardecer desde la rambla." />
+        <div class="leyenda">Cefalù. Disfrutando de un plácido atardecer desde la rambla.
+        </div>
+      </div>
+
+      <!-- FOTO ------------------------------------------------------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/77-Cefalu-rambla-atardecer-4.jpg"
+          title="Cefalù. Bello atardecer desde la rambla." />
+        <div class="leyenda">Cefalù. Bello atardecer desde la rambla.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO --------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/78-Cefalu-Rambla-al-atardecer.jpg"
+          title="Cefalù. Gente alegre en la rambla." />
+        <div class="leyenda">Cefalù. Gente alegre en la rambla.
+
+        </div>
+      </div>
+
+      <!-- FOTO -------------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/79-Cefalu-Rambla.jpg"
+          title="Cefalù. Alegría en la rambla al atardecer." />
+        <div class="leyenda">Cefalù. Alegría en la rambla al atardecer.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-FOTO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO --------------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/80-Cefalu-Noche.jpg"
+          title="Cefalù. Centro histórico de noche, lleno de gente." />
+        <div class="leyenda">Cefalù. Centro histórico de noche, lleno de gente.
+        </div>
+      </div>
+
+      <!-- FOTO ------------------------------------>
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/81-Cefalu-Estacion-de-trenes.jpg"
+          title="Cefalù. Estación de trenes." />
+        <div class="leyenda">Cefalù. Estación de trenes.
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------- FILA FOTO-VIDEO ----------------------------------------->
+
+    <div class="contenedor">
+      <!-- FOTO -------------------------------------------------------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/82-Cefalu-Centro-historico-de-noche2.jpg"
+          title="Cefalù. Centro histórico de noche." />
+        <div class="leyenda">Cefalù. Centro histórico de noche.
+        </div>
+      </div>
+
+      <!-- FOTO ---------------------------------------------------------------------------------------->
+      <div class="foto">
+        <img class="foto-interior zoom"
+          src="http://susanacanel.com/img/blog/a-sicilia/cefalu/83-Cefalu-Centro-historico-de-noche1.jpg"
+          title="Cefalù. Bar, restaurante Helios, de noche. Via Giacomo Matteotti." />
+        <div class="leyenda">Cefalù. Bar, restaurante Helios, de noche. Via Giacomo Matteotti.
+          <!--         <iframe class="video" src="http://susanacanel.com/img/blog/a-sicilia/cefalu/83-Video-Atardecer" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        title="Cefalù. Estación de trenes." />
+      </iframe> 
+      <div class="leyenda">Cefalù. Atardecer con campanas sonando desde la rambla.</div> -->
+        </div>
+      </div>
+    </div>
+
+    <!----------------------------------- INSERTA COMENTARIOS ---------------------------------->
+
+    <!-- ------------------------------------------ PIDE EL COMENTARIO ------------------------------------------->
+    <style>
+      .contenedor-comentario {
+        color: black;
+        background-color: white;
+        border-radius: 8px;
+        display: block;
+        border: 1px solid #444444;
+        margin-bottom: 3rem;
+        flex-basis: 100%;
+        padding: 16px;
+      }
+
+      .sin-padding {
+        padding: 0
+      }
+
+      .contenedor-comentario input::placeholder,
+      .contenedor-comentario textarea::placeholder {
+        font-style: italic;
+      }
+
+      .contenedor-enviar {
+        text-align: right;
+        padding-top: 1rem;
+      }
+
+      .dejatucomentario {
+        margin-bottom: 24px;
+      }
+    </style>
+
+    <div class="contenedor">
+      <div class="contenedor-comentario">
+        <div>
+          <h3 class="dejatucomentario">
+            Deja tu comentario
+          </h3>
+        </div>
+        <div>
+
+          <form class="needs-validation" novalidae>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <!-- <label for="nombre">Nombre</label> -->
+                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Tu nombre..." required>
+                <!-- <small id="nombreHelpBlock" class="form-text text-muted">
+                  Nombre y apellido o sobrenombre (nickname)
+                </small> -->
+              </div>
+              <div class="col-md-6 mb-3">
+                <!-- <label for="correo">E-mail</label> -->
+                <input type="email" class="form-control" name="correo" id="correo"
+                  placeholder="Tu dirección de correo electrónico..." required>
+                <!-- <small id="correoHelpBlock" class="form-text text-muted">
+                  Para establecer o mantener el contacto
+                </small> -->
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-12">
+                <!-- <label for="mensaje">Comentario</label> -->
+                <textarea class="form-control" rows="6" cols="50" name="mensaje" id="mensaje"
+                  placeholder="Tu mensaje..."></textarea>
+                <!-- <small id="mensajeHelpBlock" class="form-text text-muted">
+                  Ingresa aquí tu comentario
+                </small> -->
+              </div>
+            </div>
+            <div class="contenedor-enviar">
+              <button class="btn btn-default" onclick="guardarContacto()" id="botonOk">ENVIAR</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- -------------------------------------------- MUESTRA LOS COMENTARIOS ------------------------------------->
+        <hr />
+        <h3>Comentarios</h3>
+        <div id="lista"></div>
+      </div>
+    </div>
+
+    <!-- ---------------------------- PLANTILLA PARA LOS COMENTARIOS --------------------------------------------->
+    <template id="plantilla-comentarios">
+      <div class="com-fila-plantilla">
+        <div class="com-usuario-fecha">
+          <span class="com-usuario-plantilla"></span>
+          <span class="com-fecha-plantilla"></span>
+        </div>
+        <div class="com-texto"></div>
+      </div>
+    </template>
+    <!-- --------------------------------- LLAMADO A JAVA SCRIPT DE LA PÁGINA ------------------------------------->
+    <script src="/js/comentario.js"></script>
+    <!-- ------------- CIERRE DEL CONTENEDOR ARTICULO ----------------------------------------->
+
+    <!-- Este script pone el amarillo en la página activa -->
+    <script>
+      document.getElementById("index").classList.remove('activo');
+      document.getElementById("sobremi").classList.remove('activo');
+      document.getElementById("blogvlog").classList.add('activo');
+      document.getElementById("asesoramiento").classList.remove('activo');
+      document.getElementById("contactame").classList.remove('activo');
+      document.getElementById("subscribite").classList.remove('activo');
+    </script>
+    <!-- ----------------------------------------------------------------------------------------------------------- -->
+    <div class="pie">
+
+      <div class="telefono">
+        <div class="telefonotelefono">
+          ☎ (011) 4543-5278 <br />
+          susanacanel@gmail.com <br />
+          <a href="https://www.youtube.com/susanacanel" class="redes-sociales">
+            <span>
+              <i class="fab fa-youtube"></i>
+              YouTube
+            </span>
+          </a><br />
+          <a href="https://www.facebook.com/romatoursusy/" class="redes-sociales">
+            <span>
+              <i class="fab fa-facebook"></i>
+              Facebook
+            </span>
+          </a><br />
+          <a href="https://instagram.com/canelsusana/" class="redes-sociales">
+            <span>
+              <i class="fab fa-instagram"></i>
+              Instagram
+            </span>
+          </a><br />
+        </div>
+      </div>
+      <div class="politica">
+        <div class="politicapolitica">
+          Copyright © <a href="https://susanacanel.com/">Susana Canel</a> <br /> <a href="politica.php">Política de
+            privacidad</a>
+          <br /><span class="autora">Sitio creado por: Susana Canel</span>
+        </div>
+      </div>
+      <div class="direccion">
+        <div class="direcciondireccion">
+          Belgrano <br />Buenos Aires <br />Argentina
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+<!-- ----------------------------------------------------------------------------------------------------------- -->

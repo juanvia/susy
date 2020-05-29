@@ -1,7 +1,8 @@
 .icono {
-  height: 2.5rem;
+  position: absolute;
+  top: 4px;
+  height: 3rem;
   border-radius: 1.5rem;
-  padding: 0.25rem 0 0 0.25rem;
 }
 
 .encabezamiento {
@@ -274,14 +275,6 @@ body {
   padding: 1.5rem 3rem 1.5rem 3rem;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.foto {
-  width: 528px;
-  padding: 16px;
-  border: 1px solid #07b8a0;
-  margin-bottom: 4px;
-  border-radius: 8px;
 }
 
 .texto {
@@ -755,17 +748,8 @@ font-family: 'Lovers Quarrel', cursive; */
   padding-left: 0.5rem;
 }
 
-.buscar::placeholder {
-  color: #1ba145;
-}
-
 .navbar-brand {
   margin-right: 4rem;
-}
-
-li.nav-item .btn {
-  padding-top: 4px;
-  padding-bottom: 0px;
 }
 
 html {
@@ -810,9 +794,58 @@ h2 {
   margin-bottom: 24px;
 }
 
+.boton-busqueda {
+  border: 1px solid transparent;
+  padding-top: 2px;
+}
+
+.boton-busqueda:hover {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+
+.buscar::placeholder {
+  font-style: italic;
+  color: #d0d0d0;
+}
+
+.mi-ul {
+  height: 30px;
+}
+
+.mi-navbar {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+mi-brand {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.susana {
+  position: absolute;
+  left: 4.5rem;
+  top: 1px;
+  font-size: 2rem;
+}
+
+.contenedor .texto h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
 @media (max-width: 900px) {
   .foto {
     width: 100%;
+  }
+
+  .mi-ul {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
   }
 
   .texto {
@@ -828,21 +861,21 @@ h2 {
     padding-left: 8px;
     padding-right: 8px;
   }
-  
+
   .texto {
     margin-top: 1rem !important;
     width: 100%;
     padding-left: 8px;
     padding-right: 8px;
   }
-  
+
   .contenedor {
     padding: 0;
   }
+
   .contenedor-articulo {
     padding-left: 8px;
     padding-right: 8px;
   }
 
 }
-
